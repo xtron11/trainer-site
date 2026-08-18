@@ -52,7 +52,7 @@
   },
   "knowsAbout": ["Сколиоз", "Метод Шрот", "BSPTS", "SEAS", "Коррекция осанки"],
   "sameAs": [
-    "https://instagram.com/scoliosis_krg"
+    "https://www.instagram.com/scoliosis_krg/"
   ]
 }
 </script>
@@ -204,6 +204,92 @@ header{
 .card .ic svg{width:26px;height:26px}
 .card h3{font-size:19px;margin-bottom:8px}
 .card p{margin:0;color:var(--muted);font-size:15px}
+
+/* ---------- INSTAGRAM ---------- */
+.instagram{
+  background:var(--bg);
+}
+
+.instagram-card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:clamp(30px,5vw,52px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:32px;
+  box-shadow:var(--shadow-soft);
+}
+
+.instagram-copy{
+  max-width:620px;
+}
+
+.instagram-copy h2{
+  margin-bottom:12px;
+}
+
+.instagram-copy .section-lead{
+  margin-top:0;
+}
+
+.instagram-profile{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-top:22px;
+}
+
+.instagram-icon{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  background:var(--teal-50);
+  color:var(--teal);
+  display:grid;
+  place-items:center;
+  flex:none;
+}
+
+.instagram-icon svg{
+  width:25px;
+  height:25px;
+}
+
+.instagram-profile-text{
+  display:flex;
+  flex-direction:column;
+  gap:1px;
+}
+
+.instagram-profile-text b{
+  font-size:16px;
+}
+
+.instagram-profile-text span{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.instagram-btn{
+  flex:none;
+}
+
+@media(max-width:700px){
+  .instagram-card{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .instagram-btn{
+    width:100%;
+  }
+
+  .instagram-btn .btn{
+    width:100%;
+  }
+}
 
 /* ---------- ABOUT ---------- */
 .about-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(28px,5vw,56px);align-items:start}
@@ -371,6 +457,77 @@ footer .brand{justify-content:center;margin-bottom:12px;color:var(--ink)}
   </div>
 </section>
 
+<!-- ============ INSTAGRAM ============ -->
+<section class="instagram" id="instagram">
+  <div class="wrap">
+    <div class="instagram-card">
+
+      <div class="instagram-copy">
+        <span class="eyebrow">Instagram</span>
+
+        <h2>Больше информации и упражнений</h2>
+
+        <p class="section-lead">
+          Следите за работой специалиста, полезными материалами и упражнениями
+          в Instagram.
+        </p>
+
+        <a
+          class="instagram-profile"
+          href="https://www.instagram.com/scoliosis_krg/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram scoliosis_krg"
+        >
+          <span class="instagram-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1"/>
+            </svg>
+          </span>
+
+          <span class="instagram-profile-text">
+            <b>@scoliosis_krg</b>
+            <span>Instagram</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="instagram-btn">
+        <a
+          class="btn btn-primary"
+          href="https://www.instagram.com/scoliosis_krg/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Перейти в Instagram
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14"/>
+            <path d="m13 6 6 6-6 6"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- ============ BOOKING ============ -->
 <section class="booking" id="booking">
